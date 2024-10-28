@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Digital Diary",
+    "description": "Mood Tracker, Positive Affirmations, Manifestation ",
+    "version": "1.0",
+    "action": {
+      "default_popup": "DigitalDiary.html",
+      "default_icon": "hello_extensions.png"
+    }
+  }
