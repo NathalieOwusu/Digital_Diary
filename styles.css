@@ -10,6 +10,8 @@ body {
 h1 {
     font-size: 25px;
     color: #6b2cff;
+    position: relative;
+    top: 7vh;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -18,15 +20,19 @@ h1 {
 
 h2 {
     font-size: 1.4em;
+    position: relative;
+    top: 2vh;
     color: #6b2cff;
     margin-bottom: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-img{
-    position: relative;
-    left:30vh;
-    top:0vh;
-    margin: 0 auto;
+img {
+    position: fixed;
+    left: calc(100% - 185px); /* Adjusts to be on the right edge of the container */
+    top: 10px; /* Keeps it at the top */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin: 0;
 }
 
 #moodChecker {
@@ -99,4 +105,20 @@ font-weight: bold;
 #mood:hover{
 background-color: #f1e16a;
 }
+#clearHistory{
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   border: 2px solid #6b2cff;
+    font-size: 1em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
 
+#clearHistory:hover{
+background-color: rgb(92, 172, 185);
+}
+select{
+    position:static;
+}

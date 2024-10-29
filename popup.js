@@ -49,8 +49,22 @@ document.getElementById("viewHistory").addEventListener("click", () => {
         document.getElementById("moodHistory").classList.toggle("hidden");
     });
 });
-
+// Clear Mood History
+document.getElementById("clearHistory").addEventListener("click", ()=> {
+    chrome.storage.sync.remove("moodHistory", ()=>{
+        const historyList = document.getElementById("historyList");
+        historyList.innerHTML = "<li> No moods saved yet! </li>"
+        alert("Mood history cleared");
+    })
+})
 // Initialize features when popup opens
 document.addEventListener("DOMContentLoaded", () => {
     fetchAffirmation();
+
+
+
+
+
+
+    
 });
