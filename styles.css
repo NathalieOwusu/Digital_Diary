@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    width: 300px;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+#moodChecker {
+    margin-bottom: 20px;
+}
+
+#moodChecker select, #moodChecker button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#affirmation p {
+    font-style: italic;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    background-color: #eaf3ff;
+    border-radius: 4px;
+}
+
+#moodHistory {
+    margin-top: 20px;
+    max-height: 150px; /* Set max height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+#moodHistory ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#moodHistory li {
+    padding: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}
