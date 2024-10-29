@@ -7,33 +7,35 @@
     <title>Mood Diary</title>
 </head>
 <body>
+    <img src="Assets/icon.png" width="50px">
     <h1>Mood Diary</h1>
 
     <!-- Mood Checker -->
     <div id="moodChecker">
-        <h2>How are you feeling today?</h2>
+        <h2>How are you feeling now?</h2>
         <select id="mood">
-            <option value="Happy">Happy</option>
-            <option value="Excited">Excited</option>
-            <option value="Calm">Calm</option>
-            <option value="Neutral">Neutral</option>
-            <option value="Anxious">Anxious</option>
-            <option value="Sad">Sad</option>
-            <option value="Angry">Angry</option>
+            
+            <option id="option" value="Happy">Happy</option>
+            <option id="option" value="Excited">Excited</option>
+            <option id="option" value="Calm">Calm</option>
+            <option id="option" value="Neutral">Neutral</option>
+            <option id="option" value="Anxious">Anxious</option>
+            <option id="option" value="Sad">Sad</option>
+            <option id="option" value="Angry">Angry</option>
         </select>
         <button id="saveMood">Save Mood</button>
-        <button id="viewHistory">View Mood History</button>
+        <button id="viewHistory">Mood Timeline</button>
     </div>
 
     <!-- Affirmation Quote -->
     <div id="affirmation">
-        <h2>Positive Affirmation</h2>
+        <h2>Your Daily Affirmation</h2>
         <p id="quote">Loading...</p>
     </div>
 
     <!-- Mood History -->
     <div id="moodHistory" class="hidden">
-        <h2>Mood History</h2>
+        <h2>Mood Timeline</h2>
         <ul id="historyList"></ul>
     </div>
 

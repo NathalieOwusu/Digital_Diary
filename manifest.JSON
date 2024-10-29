@@ -4,13 +4,16 @@
   "description": "Save your daily mood and receive a positive affirmation.",
   "version": "1.0",
   "action": {
-      "default_popup": "DigitalDiary.html",
-      "default_icon": "assets/icon.png"
+    "default_popup": "MoodDiary.html",
+  "default_icon": { "16": "Assets/icon.png", "48": "Assets/icon.png", "128": "Assets/icon.png"}
   },
-  "permissions": [
-      "storage"
-  ],
-  "host_permissions": [
-      "https://www.affirmations.dev/"
-  ]
-}
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.affirmations.dev/"],
+
+  "icons": {
+    "16": "Assets/icon.png", 
+    "48": "Assets/icon.png", 
+    "128": "Assets/icon.png"}
+
+  }
+
